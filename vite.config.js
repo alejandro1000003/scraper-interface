@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/',
   build: {
     outDir: 'build', // Configura el nombre de la carpeta de salida (opcional, por defecto es "dist")
   },

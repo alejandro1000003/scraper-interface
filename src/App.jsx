@@ -58,11 +58,11 @@ function App() {
           <div className="category-container">
           {categoryImagesArray.map((category, index) => (
             <a key={index} href={category.url}>
-              <img className="category-image" src={`/src/assets/categorias/${category.image || 'snack.png'}`} alt={category.name || 'Categoría'} style={{ width: '120px', height: '120px', borderRadius: '20%', padding: '7px' }} />
+              <img className="category-image" src={`./images/categorias/${category.image || 'snack.png'}`} alt={category.name || 'Categoría'} style={{ width: '120px', height: '120px', borderRadius: '20%', padding: '7px' }} />
             </a>
           ))}
           </div>
-          <button className="help-button" onClick={toggleDescription}><img src={"/src/assets/ask.png"} alt="Ayuda" style={{ width: '30px', height: '30px', padding: '7px' }} /></button>
+          <button className="help-button" onClick={toggleDescription}><img src={"./images/ask.png"} alt="Ayuda" style={{ width: '30px', height: '30px', padding: '7px' }} /></button>
           {showDescription && <Description />}
         </>
       )
@@ -71,7 +71,7 @@ function App() {
 
   return (
     <>
-      {currentPath !== '/' ? <span>{currentPath} <a className="help-button" href='/'><img src={"/src/assets/return.png"} alt="Volver" style={{ width: '30px', height: '30px', padding: '7px' }} /></a></span> : null}
+      {currentPath !== '/' ? <span>{currentPath} <a className="help-button" href='/'><img src={"./images/return.png"} alt="Volver" style={{ width: '30px', height: '30px', padding: '7px' }} /></a></span> : null}
       {products.length > 0 ? (
         <>
          {renderContent()}
