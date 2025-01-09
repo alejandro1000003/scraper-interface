@@ -66,3 +66,17 @@
     margin-right: auto;
     padding: 95px;
 }
+
+@media screen and (max-width: 768px) {
+    .category-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}

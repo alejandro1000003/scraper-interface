@@ -14,7 +14,8 @@ const categoryImagesArray = [
   { nombre: 'azucar-caramelos-y-chocolate', url: '/azucar-caramelos-y-chocolate', image: 'donut.png' },
   { nombre: 'bebe', url: '/bebe', image: 'baby-boy.png' },
   { nombre: 'bodega', url: '/bodega', image: 'wine-bottle.png' },
-];
+  { nombre: 'cacao', url: '/cacao', image: 'cacao.png' }
+];  
 
 const App = () => {
   const [products, setProducts] = useState([]);
