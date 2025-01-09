@@ -68,6 +68,14 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .clickable-image {
+        cursor: pointer;
+        border-radius: 10%;
+        width: 100px;
+        height: 100px;
+    }
+
     .category-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -81,11 +89,3 @@
     }
 }
 
-@media screen and (max-width: 339px) {
-    .clickable-image {
-        cursor: pointer;
-        border-radius: 10%;
-        width: 100px;
-        height: 100px;
-    }
-}
