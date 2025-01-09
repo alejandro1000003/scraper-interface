@@ -62,9 +62,9 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    margin-left: auto;
+    width: fit-content;
     margin-right: auto;
-    padding: 95px;
+    margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -78,5 +78,14 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+}
+
+@media screen and (max-width: 339px) {
+    .clickable-image {
+        cursor: pointer;
+        border-radius: 10%;
+        width: 100px;
+        height: 100px;
     }
 }
