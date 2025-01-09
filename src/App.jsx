@@ -14,7 +14,7 @@ const categoryImagesArray = [
   { nombre: 'azucar-caramelos-y-chocolate', url: '/azucar-caramelos-y-chocolate', image: 'donut.png' },
   { nombre: 'bebe', url: '/bebe', image: 'baby-boy.png' },
   { nombre: 'bodega', url: '/bodega', image: 'wine-bottle.png' },
-  { nombre: 'cacao', url: '/cacao', image: 'cacao.png' }
+  { nombre: 'cacao', url: '/cacao', image: 'chocolate.png' }
 ];  
 
 const App = () => {
@@ -65,6 +65,7 @@ const App = () => {
           {categoryImagesArray.map((category, index) => (
             <Link key={index} to={category.url}>
               <img className="category-image" src={`./images/categorias/${category.image || 'snack.png'}`} alt={category.name || 'Categoría'} style={{ width: '120px', height: '120px', borderRadius: '20%', padding: '7px' }} />
+              {console.log(`./images/categorias/${category.image || 'snack.png'}`)}
             </Link>
           ))}
         </div>
